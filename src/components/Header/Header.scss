@@ -1,0 +1,78 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  font-family: "avenir-regular";
+  width: 100%;
+  padding-top: 1rem;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  &__search-container {
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__logo-image {
+    width: 7rem;
+    height: auto;
+    max-width: 100%;
+    @include flex-center;
+  }
+  &__input {
+    background-color: $Alabaster;
+    border-radius: 3px;
+    padding: 0.5rem 0;
+    border: 1px solid $Mercury;
+    width: 75%;
+    background-image: url("../../src/assets/images/search.svg");
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    &::placeholder {
+      color: $BrainFlix-Black;
+    }
+  }
+  &__profile-image {
+    width: 1.8rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: $Mercury;
+    margin-left: 1rem;
+
+    @include tablet {
+      width: 3.1rem;
+      height: 2.8rem;
+      margin-top: 1.3rem;
+      margin-left: 0.2rem;
+    }
+  }
+  &__button-container{
+    display:flex;
+    flex-direction:column;
+    padding-top:1rem;
+  }
+  &__button{
+    padding:0.5rem 0rem;
+    background-color:$BrainFlix-Blue;
+    color:$White;
+    border:none;
+    border-radius:2px;
+    margin: 0 1rem;
+    background-image: url("../../src/assets/images/upload.svg");
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+  }
+}
