@@ -1,4 +1,4 @@
-function VideoList({ videos, selectedVideo }) {
+function VideoList({ videos, selectVideo }) {
   console.log(videos)
 
   // Add a function handleVideoChange, onClick will change the video that's selected state inside the list tag, without a button
@@ -9,7 +9,7 @@ function VideoList({ videos, selectedVideo }) {
 
           <ul className="selection__list">
           {videos.map((video)=>(
-            <li className="selection__video" key={video.id}>
+            <li className="selection__video" key={video.id} onClick={()=>selectVideo(video.id)}>
               
             <h1 className="selection__title">{video.title}</h1>
             <p className="selection__channel">{video.channel}</p>

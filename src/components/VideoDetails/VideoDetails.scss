@@ -24,37 +24,37 @@
         object-fit:cover;
         padding-top:1rem;
     }
-    &__controls{
-        color:$White;
-        position:absolute;
-        bottom:7px;
-        z-index:1;
-        display:flex;
-        align-items:center;
-    }
-&__play{
-    padding-left:1rem;
-    background-color: rgba($BrainFlix-DarkBlack,0.5);
-}
+//     &__controls{
+//         color:$White;
+//         position:absolute;
+//         bottom:7px;
+//         z-index:1;
+//         display:flex;
+//         align-items:center;
+//     }
+// &__play{
+//     padding-left:1rem;
+//     background-color: rgba($BrainFlix-DarkBlack,0.5);
+// }
 
-&__icons{
-    background-color: rgba($BrainFlix-DarkBlack,0.5);
-    display:flex;
-    align-items:center;
-}
-    &__scrub{
-        padding-left:1rem;
-        height:9px;
-        width:9px;
-    }
-    &__fullscreen{
-        padding-left:15rem;
-    }
+// &__icons{
+//     background-color: rgba($BrainFlix-DarkBlack,0.5);
+//     display:flex;
+//     align-items:center;
+// }
+//     &__scrub{
+//         padding-left:1rem;
+//         height:9px;
+//         width:9px;
+//     }
+//     &__fullscreen{
+//         padding-left:15rem;
+//     }
 
-&__video{
-    display:flex;
-    flex-direction:column;
-}
+// &__video{
+//     display:flex;
+//     flex-direction:column;
+// }
 
 
 }

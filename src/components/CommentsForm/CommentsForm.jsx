@@ -1,19 +1,26 @@
-const handleSubmit = (event) => {
-  //prevent new page load
-  event.preventDefault();
+import "./CommentsForm.scss";
 
-  //newEntry - a new object with what you need and it stores the form details
-  const newEntry = {
-    name: event.target.name.value,
-    comment: event.target.comment.value,
-  };
-};
+function CommentsForm() {
+  return (
+    <section className="comments-form">
+      <h3>JOIN THE CONVERSATION</h3>
+      <form className="comments-form__container">
+        <div className="comments-form__input">
+          <img
+            className="comment-form__profile-picture"
+            src="../src/assets/images/Mohan-muruge.jpg"
+            alt="Mohan's picture"
+          />
+          <textarea
+            name="comment"
+            placeholder="Add a new comment"
+            className="comment-form__comment"
+          />
+        </div>
+        <button type="submit" className="comment-form__button">COMMENT</button>
+      </form>
+    </section>
+  );
+}
 
-<form onSubmit={handleSubmit}>
-  <label htmlFor="name">Name</label>
-  <input type="text" name="name"></input>
-
-  <label htmlFor="comment">Comment</label>
-  <input type="text" name="comment"></input>
-  <button type="submit"></button>
-</form>;
+export default CommentsForm;
