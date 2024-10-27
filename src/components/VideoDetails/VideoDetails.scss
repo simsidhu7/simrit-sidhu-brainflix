@@ -3,31 +3,7 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .video {
-  @include flex-column;
   width: 100vw;
-
-  &__all-details {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    border-bottom: 1px solid $Mercury;
-    margin: 0 1rem;
-    @include tablet {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-  }
-
-  &__info {
-    @include flex-column;
-    align-items: flex-start;
-    padding: 0 1rem;
-    @include tablet {
-      flex-direction: row;
-      align-items: center;
-    }
-  }
 
   &__title {
     font-family: "avenir-bold";
@@ -45,13 +21,33 @@
     }
   }
 
+  &__all-details {
+    display:flex;
+    align-items:center;
+    gap: 0.5rem;
+    border-bottom: 1px solid $Mercury;
+    margin: 0 1rem;
+    @include tablet {
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__info {
+    @include flex-column;
+    align-items: flex-start;
+    @include tablet {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+
   &__person {
     font-family: "avenir-demi";
     font-size: 0.9rem;
     color: $BrainFlix-DarkBlack;
     margin-bottom: 0.2rem;
-    padding-right: 2.5rem;
-    white-space: nowrap;
+    padding-right: 1rem;
     @include tablet {
       font-size: 1rem;
     }
@@ -59,50 +55,64 @@
 
   &__meta {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     @include mobile-body-format;
     @include tablet {
+        flex-direction:row;
       font-size: 1rem;
-      gap: 1rem;
-    }
-  }
-  &__date {
-    @include mobile-body-format;
-    padding-right: 7.25rem;
-    @include tablet {
-        padding-right:6rem;
+      gap: 1.5rem;
     }
   }
 
-  &__data {
+  &__views-container,
+  &__likes-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    @include mobile-body-format;
-    @include tablet {
-      font-size: 1rem;
-    }
-    .video__views,
-    .video__likes {
-      width: 1.3rem;
-      height: 1.3rem;
-    }
-  }
-  &__views {
-    padding-right: 0.3rem;
   }
 
-  &__likes {
-    padding-right: 0.3rem;
+  &__views-container{
+    padding-bottom:1.1rem;
   }
+  &__views-icon,
+  &__likes-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+  }
+
 
   &__description {
     @include mobile-body-black;
-    padding: 0rem 1rem;
+    margin: 1rem;
     @include tablet {
       font-size: 1rem;
       padding: 0 1rem 1rem 1rem;
     }
   }
+
+  &__date {
+    @include mobile-body-format;
+    padding-right: 7.25rem;
+    @include tablet {
+      padding-right: 6rem;
+    }
+  }
+
+  //   &__data {
+  //     display: flex;
+  //     flex-direction: row;
+  //     align-items: center;
+  //     @include mobile-body-format;
+  //     @include tablet {
+  //       font-size: 1rem;
+  //     }
+
+  //   }
+  //   &__views {
+  //     padding-right: 0.3rem;
+  //   }
+
+  //   &__likes {
+  //     padding-right: 0.3rem;
+  //   }
 }
