@@ -11,14 +11,22 @@
     flex-direction: row;
     gap: 0.5rem;
     border-bottom: 1px solid $Mercury;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0 1rem;
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__info {
     @include flex-column;
     align-items: flex-start;
     padding: 0 1rem;
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -30,6 +38,11 @@
     border-bottom: 1px solid $Mercury;
     margin-left: 1rem;
     margin-right: 1rem;
+    @include tablet {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin: 1rem 1rem 0;
+    }
   }
 
   &__person {
@@ -39,6 +52,9 @@
     margin-bottom: 0.2rem;
     padding-right: 2.5rem;
     white-space: nowrap;
+    @include tablet {
+      font-size: 1rem;
+    }
   }
 
   &__meta {
@@ -46,10 +62,17 @@
     flex-direction: row;
     align-items: center;
     @include mobile-body-format;
+    @include tablet {
+      font-size: 1rem;
+      gap: 1rem;
+    }
   }
   &__date {
     @include mobile-body-format;
     padding-right: 7.25rem;
+    @include tablet {
+        padding-right:6rem;
+    }
   }
 
   &__data {
@@ -57,7 +80,9 @@
     flex-direction: row;
     align-items: center;
     @include mobile-body-format;
-
+    @include tablet {
+      font-size: 1rem;
+    }
     .video__views,
     .video__likes {
       width: 1.3rem;
@@ -75,5 +100,9 @@
   &__description {
     @include mobile-body-black;
     padding: 0rem 1rem;
+    @include tablet {
+      font-size: 1rem;
+      padding: 0 1rem 1rem 1rem;
+    }
   }
 }

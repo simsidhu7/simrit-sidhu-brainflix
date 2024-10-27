@@ -30,15 +30,6 @@ function VideoDetails({ selectedVideo }) {
           {selectedVideo.likes}
           </div>
         </div>
-        {/* <div className="video__data"> */}
-          {/* <img
-            className="video__views"
-            src="../../src/assets/images/views.svg"
-            alt="Views Icon"
-          />{"  "}
-          {selectedVideo.views} */}
-   
-        {/* </div> */}
       </section>
       <p className="video__description">{selectedVideo.description}</p>
     
