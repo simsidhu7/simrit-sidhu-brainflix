@@ -1,0 +1,61 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.comments {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin:0;
+  }
+  &__list-item {
+    list-style-type: none;
+    border-bottom: 1px solid $Mercury;
+    margin: 0.1rem 0.8rem 0.1rem 0.8rem;
+  }
+
+  &__image-placeholder {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: $Mercury;
+    margin-left:0.8rem;
+    margin-right: 0.8rem;
+    @include tablet {
+      width: 3.1rem;
+      height: 2.8rem;
+      margin-top: 1.3rem;
+      margin-right: 1.5rem;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items:center;
+    width: 100%;
+    margin:0;
+    padding:0;
+  }
+
+  &__name {
+    font-family: "avenir-demi";
+    font-size: 0.81rem;
+    color: $BrainFlix-Black;
+    
+  }
+
+  &__date {
+    font-family: "avenir-regular";
+    font-size: 0.81rem;
+    color: $Silver;
+    margin-left: auto;
+  }
+
+  &__text {
+    font-family: "avenir-regular";
+    font-size: 0.81rem;
+    color: $BrainFlix-Black;
+    margin-top: 0rem;
+    margin-left:4.1rem;
+  }
+}

@@ -4,9 +4,10 @@
 
 .comments-form {
   font-family: "avenir-regular";
+ 
   &__comments-amount {
     padding: 0rem 1rem;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
     font-size: 14px;
     font-family: "avenir-demi";
     line-height: 1.13rem;
@@ -15,9 +16,11 @@
   &__container {
     display: flex;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0 0 1rem 0rem;
+    border-bottom: 1px solid $Mercury;
+ margin-left:0.8rem;
+ margin-right:0.8rem;
   }
-
 
   &__commentarea {
     padding: 8px;
@@ -26,6 +29,10 @@
     font-family: "avenir-regular";
     width: 90%;
     height: 75px;
+    background-color:$Alabaster;
+    &::placeholder {
+      color: $BrainFlix-DarkBlack;
+    }
   }
 
   &__input {
@@ -41,7 +48,7 @@
       width: 3.1rem;
       height: 2.8rem;
       margin-top: 1.3rem;
-      margin-left: 0.2rem;
+      margin-left: 0rem;
     }
   }
 
@@ -52,21 +59,21 @@
     border: none;
     border-radius: 4px;
     margin: 1rem 0 0 3.2rem;
-    background-image: url("../../src/assets/images/upload.svg");
+    background-image: url("../../src/assets/images/add_comment.svg");
     background-position: 5% 50%;
     background-repeat: no-repeat;
     font-family: "avenir-regular";
     font-size: 0.81rem;
     line-height: 1.13rem;
-    
   }
 }
-label{
-    font-family:"avenir-demi";
-    font-size:0.81rem;
-    color:$Silver;
-    margin-bottom:0.3rem;
-    line-height:18px;
-    padding-left:3.3rem;
-    padding-top:1.5rem;
+
+label {
+  font-family: "avenir-demi";
+  font-size: 0.81rem;
+  color: $Silver;
+  margin-bottom: 0.3rem;
+  line-height: 18px;
+  padding-left: 3.3rem;
+  padding-top: 1.5rem;
 }
