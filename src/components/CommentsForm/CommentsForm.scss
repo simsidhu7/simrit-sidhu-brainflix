@@ -8,9 +8,14 @@
   &__comments-amount {
     padding: 0rem 1rem;
     margin: 0.5rem 0 0 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "avenir-demi";
     line-height: 1.13rem;
+    @include tablet {
+      line-height: 1.25rem;
+      font-family: "avenir-bold";
+      padding-left: 2.3rem;
+    }
   }
 
   &__container {
@@ -19,6 +24,10 @@
     border-bottom: 1px solid $Mercury;
     margin-left: 0.8rem;
     margin-right: 0.8rem;
+    @include tablet {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   &__commentarea {
@@ -31,6 +40,13 @@
     background-color: $Alabaster;
     &::placeholder {
       color: $BrainFlix-DarkBlack;
+      @include tablet {
+        padding-left: 0.5rem;
+      }
+    }
+    @include tablet {
+      height: 1.25rem;
+      width: 28.125rem;
     }
   }
 
@@ -38,16 +54,24 @@
     display: flex;
     align-items: flex-start;
     gap: 0.63rem;
+    @include tablet {
+      align-items: center;
+      flex: 1;
+    }
+  }
+
+  &__input-wrapper {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__profile-picture {
     width: 2.6rem;
     height: 2.4rem;
     border-radius: 50%;
     @include tablet {
-      width: 3.1rem;
-      height: 2.8rem;
-      margin-top: 1.3rem;
-      margin-left: 0rem;
+      margin-left: 1.5rem;
     }
   }
 
@@ -64,6 +88,13 @@
     font-family: "avenir-regular";
     font-size: 0.81rem;
     line-height: 1.13rem;
+    @include tablet {
+      margin-left: 1rem;
+      margin-top: 2.93rem;
+      align-self: flex-start;
+      padding: 0.6rem 3rem 0.6rem 3rem;
+      line-height: 18px;
+    }
   }
 }
 
@@ -75,4 +106,7 @@ label {
   line-height: 18px;
   padding-left: 3.3rem;
   padding-top: 1.5rem;
+  @include tablet {
+    padding-left: 4.8rem;
+  }
 }
