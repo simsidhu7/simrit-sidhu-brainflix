@@ -23,9 +23,11 @@
     padding-bottom: 1rem;
   }
   &__search-container {
-    width: 100%;
+    width: 96%;
     display: flex;
     align-items: center;
+    font-size:0.81rem;
+    margin-left:1rem;
   }
   &__logo-image {
     width: 7rem;
@@ -36,7 +38,7 @@
   &__input {
     background-color: $Alabaster;
     border-radius: 3px;
-    padding: 0.5rem 0;
+    padding: 0.7rem 0;
     border: 1px solid $Mercury;
     width: 75%;
     background-image: url("../../src/assets/images/search.svg");
@@ -44,14 +46,18 @@
     background-repeat: no-repeat;
     &::placeholder {
       color: $BrainFlix-Black;
+      font-family:"avenir-regular";
+      font-size:12px;
+      line-height:18px;
+      padding-left:2.3rem;
     }
   }
   &__profile-image {
-    width: 1.8rem;
-    height: 1.5rem;
+    width: 2.6rem;
+    height: 2.4rem;
     border-radius: 50%;
     background-color: $Mercury;
-    margin-left: 1rem;
+    margin-left: 0.8rem;
 
     @include tablet {
       width: 3.1rem;
@@ -66,14 +72,17 @@
     padding-top:1rem;
   }
   &__button{
-    padding:0.5rem 0rem;
+    padding:0.65rem 0rem;
     background-color:$BrainFlix-Blue;
     color:$White;
     border:none;
-    border-radius:2px;
+    border-radius:4px;
     margin: 0 1rem;
     background-image: url("../../src/assets/images/upload.svg");
     background-position: 5% 50%;
     background-repeat: no-repeat;
+    font-family: "avenir-regular";
+    font-size:13px;
+    line-height:1.13rem;
   }
 }

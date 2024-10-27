@@ -26,10 +26,3 @@ function VideoList({ videos, selectVideo }) {
 }
 
 export default VideoList;
-
-{
-  
-}
-{
- 
-}

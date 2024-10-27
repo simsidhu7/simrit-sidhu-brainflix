@@ -20,6 +20,13 @@
     align-items:center;
 }
 
+@mixin mobile-body-format{
+  font-family:"avenir-regular";
+  font-size:0.9rem;
+  line-height:1.13rem;
+  color:$Silver;
+}
+
 // @mixin mobile-body-styling{
 //   font-family:"avenir-regular";
 //   font-size:$phone-body-size;

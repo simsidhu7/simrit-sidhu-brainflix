@@ -14,7 +14,7 @@ function Header() {
         </a>
       </div>
       <section className="header__search-container">
-        <input className="header__input" name='search' placeholder="        Search" />
+        <input className="header__input" name='search' placeholder="Search" />
         <img
             className="header__profile-image"
             src="../../src/assets/images/Mohan-muruge.jpg"
