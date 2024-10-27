@@ -45,6 +45,9 @@
       width: 8rem;
       padding-right:7rem;
     }
+    @include desktop{
+      padding: 0.5rem 32rem 0.5rem 5rem;
+    }
   }
   &__input {
     background-color: $Alabaster;
@@ -69,6 +72,9 @@
     }
     @include tablet {
       width: 100%;
+    }
+    @include desktop{
+      width:19vw;
     }
   }
  
@@ -118,6 +124,9 @@
     line-height: 1.13rem;
     width:30vw;
     }
+    @include desktop{
+      width:12vw;
+    }
   }
 
   &__profile-image {
@@ -132,6 +141,10 @@
       height: 2.7rem;
       margin-top: 0.1rem;
       margin-left: auto;
+    }
+
+    @include desktop{
+      margin:0 0 0 1rem;
     }
   }
 }
