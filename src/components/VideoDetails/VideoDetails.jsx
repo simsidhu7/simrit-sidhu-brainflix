@@ -41,7 +41,7 @@ function VideoDetails({ selectedVideo }) {
         {/* </div> */}
       </section>
       <p className="video__description">{selectedVideo.description}</p>
-      <p className="video__comments-amount">3 Comments</p>
+    
     </main>
   );
 }

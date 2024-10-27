@@ -2,33 +2,71 @@
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/typography.scss" as *;
 
-.comment-form {
-  margin-bottom: 1.25rem;
-  &__form {
+.comments-form {
+  font-family: "avenir-regular";
+  &__comments-amount {
+    padding: 0rem 1rem;
+    margin: 0;
+    font-size: 14px;
+    font-family: "avenir-demi";
+    line-height: 1.13rem;
+  }
+
+  &__container {
     display: flex;
     flex-direction: column;
-    gap: 0.63rem;
+    padding: 0 1rem;
   }
+
+
+  &__commentarea {
+    padding: 8px;
+    border: 1px solid $Mercury;
+    border-radius: 3px;
+    font-family: "avenir-regular";
+    width: 90%;
+    height: 75px;
+  }
+
   &__input {
     display: flex;
     align-items: flex-start;
     gap: 0.63rem;
   }
   &__profile-picture {
-    width: 1rem;
-    height: 1rem;
+    width: 2.6rem;
+    height: 2.4rem;
     border-radius: 50%;
+    @include tablet {
+      width: 3.1rem;
+      height: 2.8rem;
+      margin-top: 1.3rem;
+      margin-left: 0.2rem;
+    }
   }
-  &__comment {
-    padding: 8px;
-    border: 1px solid $Mercury;
-    border-radius: 3px;
-  }
+
   &__button {
+    padding: 0.65rem 0rem;
+    background-color: $BrainFlix-Blue;
+    color: $White;
     border: none;
-    padding: 0.5rem 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    border-radius: 4px;
+    margin: 1rem 0 0 3.2rem;
+    background-image: url("../../src/assets/images/upload.svg");
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    font-family: "avenir-regular";
+    font-size: 0.81rem;
+    line-height: 1.13rem;
+    
   }
+}
+label{
+    font-family:"avenir-demi";
+    font-size:0.81rem;
+    color:$Silver;
+    margin-bottom:0.3rem;
+    line-height:18px;
+    padding-left:3.3rem;
+    padding-top:1.5rem;
 }
