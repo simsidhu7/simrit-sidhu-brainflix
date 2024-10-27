@@ -22,10 +22,9 @@
     margin-left: 0.8rem;
     margin-right: 0.8rem;
     @include tablet {
-      width: 3.1rem;
-      height: 2.8rem;
-      margin-top: 1.3rem;
-      margin-right: 1.5rem;
+      width:2.7rem;
+      margin: 1.3rem 1.4rem 0rem 1.4rem;
+
     }
   }
   &__container {
@@ -53,5 +52,11 @@
     @include mobile-body-black;
     margin-top: 0rem;
     margin-left: 3.6rem;
+    @include tablet{
+      margin-left:5.5rem;
+      font-size:0.875rem;
+      line-height:1.375rem;
+      color:$BrainFlix-Black;
+    }
   }
 }
