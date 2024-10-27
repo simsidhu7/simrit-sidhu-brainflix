@@ -1,4 +1,4 @@
-import './Header.scss'
+import "./Header.scss";
 
 function Header() {
   return (
@@ -6,24 +6,24 @@ function Header() {
       <div className="header__logo">
         <a href="index.html">
           <img
-          className="header__logo-image"
+            className="header__logo-image"
             src="../../src/assets/images/BrainFlix-logo.svg"
             alt="BrainFlix logo"
           />
         </a>
       </div>
       <section className="header__search-container">
-        <input className="header__input" name='search' placeholder="Search" />
+        <input className="header__input" name="search" placeholder="Search" />
         <button className="header__tablet-button">UPLOAD</button>
         <img
-            className="header__profile-image"
-            src="../../src/assets/images/Mohan-muruge.jpg"
-            alt="Mohan Profile Picture"
-          />
-              </section>
-          <div className="header__button-container">
-          <button className="header__button">UPLOAD</button>
-          </div>
+          className="header__profile-image"
+          src="../../src/assets/images/Mohan-muruge.jpg"
+          alt="Mohan Profile Picture"
+        />
+      </section>
+      <div className="header__button-container">
+        <button className="header__button">UPLOAD</button>
+      </div>
     </header>
   );
 }

@@ -19,12 +19,11 @@ body {
     }
   }
 
-  &__details-comments{
-    @include desktop{
-      padding-left:4rem;
-      width:65%;
-      border-right:1px solid $Mercury;
+  &__details-comments {
+    @include desktop {
+      padding-left: 4rem;
+      width: 65%;
+      border-right: 1px solid $Mercury;
     }
   }
-
 }
