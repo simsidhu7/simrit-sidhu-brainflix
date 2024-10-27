@@ -12,9 +12,15 @@
     overflow: hidden;
     padding-top: 1rem;
     @include tablet {
-        height:62vh;
+      height: 50vh;
       background-color: $BrainFlix-DarkBlack;
-      padding:0 2rem;
+      justify-content: center;
+      margin: 0;
+      padding-top: 0;
+    }
+    @include desktop {
+      height: 72vh;
+      justify-content: center;
     }
   }
 }
