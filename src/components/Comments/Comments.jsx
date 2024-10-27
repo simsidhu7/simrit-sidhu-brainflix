@@ -1,5 +1,3 @@
-// Add a map function with the selected video
-
 import "./Comments.scss";
 
 function Comments({ comments }) {
