@@ -1,0 +1,20 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.video {
+  &__container {
+    display: flex;
+    aspect-ratio: 16/9;
+    height: 28vh;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    padding-top: 1rem;
+    @include tablet {
+        height:62vh;
+      background-color: $BrainFlix-DarkBlack;
+      padding:0 2rem;
+    }
+  }
+}

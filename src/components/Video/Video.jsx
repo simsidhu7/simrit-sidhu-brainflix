@@ -1,3 +1,4 @@
+import "./Video.scss";
 function Video({ Video }) {
     return (
         <div className="video__container">
