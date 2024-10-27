@@ -40,10 +40,14 @@
     margin: 0;
     line-height: 1.12rem;
     padding-top: 0;
+
   }
   &__channel {
     @include mobile-body-black;
     padding-top: 9px;
     margin: 0;
+    @include tablet{
+        padding-top:21px;
+    }
   }
 }

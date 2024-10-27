@@ -3,7 +3,6 @@ import './Header.scss'
 function Header() {
   return (
     <header className="header">
-      <nav className="header__info"></nav>
       <div className="header__logo">
         <a href="index.html">
           <img
@@ -13,8 +12,12 @@ function Header() {
           />
         </a>
       </div>
+  
+   
+    
       <section className="header__search-container">
         <input className="header__input" name='search' placeholder="Search" />
+        <button className="header__tablet-button">UPLOAD</button>
         <img
             className="header__profile-image"
             src="../../src/assets/images/Mohan-muruge.jpg"
