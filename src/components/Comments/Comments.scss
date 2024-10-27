@@ -12,6 +12,9 @@
     list-style-type: none;
     border-bottom: 1px solid $Mercury;
     margin: 0.1rem 0.8rem 0.1rem 0.8rem;
+    @include tablet {
+      margin: 0.1rem 1.4rem 0.1rem 1.4rem;
+    }
   }
 
   &__image-placeholder {
@@ -22,9 +25,8 @@
     margin-left: 0.8rem;
     margin-right: 0.8rem;
     @include tablet {
-      width:2.7rem;
+      width: 2.7rem;
       margin: 1.3rem 1.4rem 0rem 1.4rem;
-
     }
   }
   &__container {
@@ -52,11 +54,11 @@
     @include mobile-body-black;
     margin-top: 0rem;
     margin-left: 3.6rem;
-    @include tablet{
-      margin-left:5.5rem;
-      font-size:0.875rem;
-      line-height:1.375rem;
-      color:$BrainFlix-Black;
+    @include tablet {
+      margin-left: 5.5rem;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      color: $BrainFlix-Black;
     }
   }
 }
