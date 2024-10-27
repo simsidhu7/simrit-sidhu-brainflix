@@ -4,7 +4,7 @@
 
 .comments-form {
   font-family: "avenir-regular";
- 
+
   &__comments-amount {
     padding: 0rem 1rem;
     margin: 0.5rem 0 0 0;
@@ -14,12 +14,11 @@
   }
 
   &__container {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     padding: 0 0 1rem 0rem;
     border-bottom: 1px solid $Mercury;
- margin-left:0.8rem;
- margin-right:0.8rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
   }
 
   &__commentarea {
@@ -29,7 +28,7 @@
     font-family: "avenir-regular";
     width: 90%;
     height: 75px;
-    background-color:$Alabaster;
+    background-color: $Alabaster;
     &::placeholder {
       color: $BrainFlix-DarkBlack;
     }

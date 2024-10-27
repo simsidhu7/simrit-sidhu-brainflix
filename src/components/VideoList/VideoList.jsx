@@ -5,8 +5,7 @@ function VideoList({ videos, selectVideo }) {
 
   return (
     <section className="selection">
-      <h1>Next Videos</h1>
-
+      <h1 className="selection__header">NEXT VIDEOS</h1>
       <ul className="selection__list">
         {videos.map((video) => (
           <li
@@ -14,10 +13,13 @@ function VideoList({ videos, selectVideo }) {
             key={video.id}
             onClick={() => selectVideo(video.id)}
           >
-            <h1 className="selection__title">{video.title}</h1>
-            <p className="selection__channel">{video.channel}</p>
-
-            <img className="selection__video-chosen" src={video.image} />
+            <article className="selection__video-container">
+              <img className="selection__video-chosen" src={video.image} />
+            </article>
+            <article className="selection__video-desr-container">
+              <h3 className="selection__title">{video.title}</h3>
+              <p className="selection__channel">{video.channel}</p>
+            </article>
           </li>
         ))}
       </ul>

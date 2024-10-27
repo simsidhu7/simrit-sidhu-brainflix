@@ -3,8 +3,7 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .video {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   width: 100vw;
 
   @include tablet {
@@ -31,8 +30,7 @@
   }
 
   &__info {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: flex-start;
     padding: 0 1rem;
   }
@@ -51,10 +49,10 @@
   &__person {
     font-family: "avenir-demi";
     font-size: 0.9rem;
-    color:$BrainFlix-DarkBlack;
+    color: $BrainFlix-DarkBlack;
     margin-bottom: 0.2rem;
     padding-right: 2.5rem;
-    white-space:nowrap;
+    white-space: nowrap;
   }
 
   &__meta {
@@ -88,11 +86,8 @@
     padding-right: 0.3rem;
   }
 
-  &__description{
-   font-size:13px;
-   font-family:"avenir-regular";
-   line-height:1.13rem;
-padding:0rem 1rem;
+  &__description {
+    @include mobile-body-black;
+    padding: 0rem 1rem;
   }
-  
 }
