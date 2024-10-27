@@ -4,7 +4,9 @@
 
 .video {
   width: 100vw;
-
+  @include desktop {
+    width: 65vw;
+  }
   &__title {
     font-family: "avenir-bold";
     font-size: 1.5rem;
@@ -20,6 +22,9 @@
       line-height: 2.5rem;
       padding: 0rem 1rem 0 1rem;
     }
+    @include desktop {
+      padding-left: 1.9rem;
+    }
   }
 
   &__all-details {
@@ -32,6 +37,11 @@
       align-items: center;
       justify-content: space-between;
     }
+    @include desktop {
+      margin-right: 0;
+      margin-left: 2rem;
+      justify-content: unset;
+    }
   }
 
   &__info {
@@ -40,6 +50,9 @@
     @include tablet {
       flex-direction: row;
       gap: 1rem;
+    }
+    @include desktop {
+      padding-left: 0.3rem;
     }
   }
 
@@ -63,6 +76,9 @@
       flex-direction: row;
       font-size: 1rem;
       gap: 1.5rem;
+    }
+    @include desktop {
+      padding-left: 18rem;
     }
   }
 
@@ -97,6 +113,9 @@
       padding: 0 1rem 1rem 1rem;
       margin-left: 1.4rem;
     }
+    @include desktop {
+      padding: 0.5rem 5rem 1rem 1.4rem;
+    }
   }
 
   &__date {
@@ -104,8 +123,8 @@
     padding-right: 7.25rem;
     @include tablet {
       padding-right: 6rem;
-      font-size: 0.75rem;
-      padding-top:0.1rem;
+      font-size: 0.8rem;
+      padding-top: 0.1rem;
     }
   }
 }

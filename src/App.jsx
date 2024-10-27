@@ -30,6 +30,7 @@ function App() {
           <CommentsForm />
           <Comments comments={selectedVideo.comments} />
         </div>
+
         <VideoList videos={filteredVideos} selectVideo={handleSelectVideo} />
       </div>
     </div>

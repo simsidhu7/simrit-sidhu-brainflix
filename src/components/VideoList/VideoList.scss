@@ -4,6 +4,9 @@
 
 .selection {
   padding-bottom: 2rem;
+  @include desktop{
+    padding-bottom:8rem;
+  }
   &__header {
     padding: 1rem;
     margin: 0;
@@ -15,6 +18,7 @@
       padding: 1.5rem 1rem 1.5rem 1.7rem;
       font-size: 0.75rem;
     }
+
   }
   &__list {
     @include flex-column;
@@ -23,6 +27,8 @@
     @include tablet {
       padding-left: 1.7rem;
     }
+ 
+  
   }
   &__video {
     list-style-type: none;
@@ -32,6 +38,9 @@
       gap: 1.3rem;
       margin-bottom: 1rem;
       width: 45%;
+    }
+    @include desktop{
+      width:88%;
     }
   }
 
@@ -56,6 +65,9 @@
       font-size: 0.87rem;
       line-height: 1.25rem;
     }
+    @include desktop{
+      padding-bottom:0.35rem;
+    }
   }
   &__channel {
     @include mobile-body-black;
@@ -63,6 +75,9 @@
     margin: 0;
     @include tablet {
       padding-top: 8px;
+    }
+    @include desktop{
+      padding-top:0;
     }
   }
 }
