@@ -1,7 +1,8 @@
 import "./App.scss";
 import Header from "../src/components/Header/Header";
-// import Video from './components/Video/Video'
+import Video from "../src/components/Video/Video";
 import VideoDetails from "../src/components/VideoDetails/VideoDetails";
+import Comments from "../src/components/Comments/Comments";
 import CommentsForm from "../src/components/CommentsForm/CommentsForm";
 import VideoList from "../src/components/VideoList/VideoList";
 import VideoData from "../src/data/video-details.json";
@@ -24,14 +25,7 @@ function App() {
 
   const [selectedVideo, setSelectedVideo] = useState(VideoData[0]);
 
-  //User clicks on 1 of the list of buttons
-  //aray.find takes in a callback function and executes on every element on the array
-  //the return is the first element in the array that satisfies the testing function
-  //the testing function is what we return in the callback function for the array.find
-  //callback function will return true or false
-  //put arrow function beside find
-  //check if we have an item in the array that is === to the video.id and if it matches we return object to foundVideo
-  //we need to update the state value and also re-render so we set state again (third line below)
+  
   const handleSelectVideo = (clickedId) => {
     const foundVideo = videos.find((video) => clickedId === video.id);
     setSelectedVideo(foundVideo || VideoData[0]);
@@ -46,12 +40,17 @@ function App() {
   return (
     <div className="video-page">
       <Header />
-      {/* <Video/> */}
-      <VideoDetails selectedVideo={selectedVideo} />
-      {/* select video is now what you set it as below so we can use it in VideoList */}
+      <Video Video={selectedVideo}/>
+      <div className="video-page__container">
+        
+      <div className="video-page__details-comments">
+      
+              <VideoDetails selectedVideo={selectedVideo} />
       <CommentsForm />
+      <Comments comments={selectedVideo.comments} />
+      </div>
       <VideoList videos={filteredVideos} selectVideo={handleSelectVideo} />
-      {/* <VideoDetails title = {VideoJson.title} channel={VideoJson.channel} views={VideoJson.views} likes={VideoJson.likes} timestamp={VideoJson.timestamp} description={VideoJson.description}/> */}
+   </div>
     </div>
   );
 }
