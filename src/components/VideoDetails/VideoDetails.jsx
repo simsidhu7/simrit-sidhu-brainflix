@@ -1,10 +1,9 @@
 import "./VideoDetails.scss";
-import videoData from "../../data/video-details.json";
 
 function VideoDetails({ selectedVideo }) {
   return (
     <main className="video">
-      <h1 className="video__title">{selectedVideo.title}</h1>
+      {/* <h1 className="video__title">{selectedVideo.title}</h1> */}
 
       <section className="video__all-details">
         <div className="video__info">

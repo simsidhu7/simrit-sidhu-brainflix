@@ -8,6 +8,7 @@ function VideoList({ videos, selectVideo }) {
       <h1 className="selection__header">NEXT VIDEOS</h1>
       <ul className="selection__list">
         {videos.map((video) => (
+          //look at the lab to add link instead of li
           <li
             className="selection__video"
             key={video.id}

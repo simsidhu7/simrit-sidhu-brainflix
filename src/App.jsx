@@ -1,41 +1,29 @@
 import "./App.scss";
 import Header from "../src/components/Header/Header";
-import Video from "../src/components/Video/Video";
-import VideoDetails from "../src/components/VideoDetails/VideoDetails";
-import Comments from "../src/components/Comments/Comments";
-import CommentsForm from "../src/components/CommentsForm/CommentsForm";
-import VideoList from "../src/components/VideoList/VideoList";
-import VideoData from "../src/data/video-details.json";
 import { useState, useEffect } from "react";
-import {axios} from "axios";
+import axios from "axios";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import UploadPage from "./pages/VideoUploadPage/VideoUploadPage";
+import HomePage from "../src/pages/HomePage/HomePage";
 
 function App() {
-  const [videos, setVideo] = useState(VideoData);
-  const [selectedVideo, setSelectedVideo] = useState(VideoData[0]);
-  const handleSelectVideo = (clickedId) => {
-    const foundVideo = videos.find((video) => clickedId === video.id);
-    setSelectedVideo(foundVideo || VideoData[0]);
-  };
 
-  const filteredVideos = videos.filter((video) => {
-    return selectedVideo && video.id !== selectedVideo.id;
-  });
+
+
+
 
   return (
-    <div className="video-page">
-      <Header />
-      <Video Video={selectedVideo} />
-      <div className="video-page__container">
-        <div className="video-page__details-comments">
-          <VideoDetails selectedVideo={selectedVideo} />
-          <CommentsForm />
-          <Comments comments={selectedVideo.comments} />
-        </div>
+    <BrowserRouter>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/UploadPage" element={<UploadPage />} />
+        <Route path="/videos/:id" element={<HomePage />} />
+      </Routes>
 
-        <VideoList videos={filteredVideos} selectVideo={handleSelectVideo} />
-      </div>
-    </div>
+    </BrowserRouter>
   );
-}
+
+};
 
 export default App;

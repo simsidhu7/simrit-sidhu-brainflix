@@ -4,7 +4,7 @@ function Comments({ comments }) {
   return (
     <div className="comments">
       <ul className="comments__list">
-        {comments.map((comment) => (
+        {comments?.map((comment) => (
           <li key={comment.id} className="comments__list-item">
             <div className="comments__container">
               <p className="comments__image-placeholder"></p>
