@@ -6,7 +6,8 @@ import Comments from "../src/components/Comments/Comments";
 import CommentsForm from "../src/components/CommentsForm/CommentsForm";
 import VideoList from "../src/components/VideoList/VideoList";
 import VideoData from "../src/data/video-details.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import {axios} from "axios";
 
 function App() {
   const [videos, setVideo] = useState(VideoData);
