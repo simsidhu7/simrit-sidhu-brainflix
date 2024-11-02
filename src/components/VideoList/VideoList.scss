@@ -70,6 +70,9 @@
     @include flex-column;
     max-width:100%;
     justify-content:space-between;
+    @include tablet{
+      width:25%;
+    }
   }
   &__title {
     font-size: 0.81rem;
