@@ -3,10 +3,16 @@
 @use "../../styles/partials/typography.scss" as *;
 .upload {
   &__title {
-    padding: 1.5rem 1rem 0.5rem 1rem;
+    padding: 1.5rem 0rem 0rem 1rem;
     font-family: "avenir-demi";
     font-size: 1.5rem;
     border-top: 1px solid $Mercury;
+    @include tablet{
+      padding:1.5rem 0rem 0rem 1.5rem;
+      font-size:2.0625rem;
+      line-height:2.75rem;
+      margin-top:0;
+    }
   }
   &__image-title {
     color: $Silver;
@@ -14,11 +20,20 @@
     @include labels-buttons-mobile;
     padding-left: 1rem;
     margin-bottom: 0.3rem;
+    @include tablet{
+      border-top:1px solid $Mercury;
+      margin: 0rem 1.6rem 0rem 1.6rem;
+      padding: 1.4rem 0 0.2rem 0;
+    }
   }
 
   &__image {
     width: 90vw;
     margin: 0 0.95rem 0 0.95rem;
+    @include tablet{
+      margin: 0 0.95rem 0 1.5rem;
+      width:50%;
+    }
   }
 
   &__form {
@@ -35,6 +50,9 @@
       color: $Silver;
       @include labels-buttons-mobile;
       font-family: "avenir-demi";
+      @include tablet{
+        margin: 0 0.7rem;
+      }
     }
     input,
     textarea {
@@ -43,14 +61,17 @@
       border-color: $Mercury;
       margin: 0 1rem;
       border-radius: 3px;
-  
+      @include tablet{
+        margin: 0 1.6rem;
+      }
     }
+
     input {
       padding: 0.5rem 0.5rem;
     }
 
     textarea {
-      padding: 1rem 1rem 2.5rem 0.5rem;
+      padding: 0.5rem 1rem 2.5rem 0.5rem;
       margin-bottom: 1.5rem;
     }
   }
@@ -61,6 +82,11 @@
     flex-wrap: wrap;
     align-content: center;
     text-align: center;
+    @include tablet{
+      flex-direction:row-reverse;
+      border-top:1px solid $Mercury;
+      margin:0 1.5rem;
+    }
   }
 
   &__publish-button {
@@ -76,6 +102,10 @@
     background-repeat: no-repeat;
     border: none;
     margin-bottom: 1.5rem;
+    @include tablet{
+      width:22vw;
+      margin:1rem 0rem 0 4.5rem;
+    }
   }
 
   &__cancel {
@@ -84,5 +114,9 @@
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 0;
+    @include tablet{
+      margin-top:1.55rem;
+    }
   }
 }
+
