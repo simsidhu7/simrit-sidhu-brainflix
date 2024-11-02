@@ -5,12 +5,9 @@
 .video {
   &__container {
     display: flex;
-    aspect-ratio: 16/9;
-    height: 23vh;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
     padding-top: 1rem;
+    aspect-ratio: 16/9;
+
     @include tablet {
       height: 50vh;
       background-color: $BrainFlix-DarkBlack;
@@ -22,5 +19,9 @@
       height: 72vh;
       justify-content: center;
     }
+  }
+  &__image {
+    width: 100vw;
+    background-color: $BrainFlix-DarkBlack;
   }
 }
