@@ -1,3 +1,12 @@
 @use "../../styles/partials/mixins.scss" as *;
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/typography.scss" as *;
+.upload{
+&__form {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap:1rem;
+    margin-bottom: 2rem;
+  }
+}

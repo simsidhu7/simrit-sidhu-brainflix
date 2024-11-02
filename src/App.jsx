@@ -8,6 +8,7 @@ import HomePage from "../src/pages/HomePage/HomePage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 
+
 function App() {
   return (
     <BrowserRouter>

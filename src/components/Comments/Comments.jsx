@@ -1,6 +1,9 @@
 import "./Comments.scss";
 
-function Comments({ comments }) {
+//changed props from comments
+function Comments ({comments}){
+ 
+
   return (
     <div className="comments">
       <ul className="comments__list">

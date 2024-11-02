@@ -1,8 +1,7 @@
 import "./VideoList.scss";
 import { Link } from "react-router-dom";
 
-function VideoList({ videos, selectVideo }) {
-  console.log(videos);
+function VideoList({ videos }) {
 
   return (
     <section className="selection">
@@ -12,7 +11,7 @@ function VideoList({ videos, selectVideo }) {
           <li className="selection__list-item" key={video.id}>
             <Link
               to={`/videos/${video.id}`}
-              onClick={() => selectVideo(video.id)}
+             
             >
               <article className="selection__video-container">
                 <img

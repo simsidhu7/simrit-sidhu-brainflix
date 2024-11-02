@@ -1,25 +1,25 @@
 import "./VideoDetails.scss";
 import {useState, useEffect} from "react";
 import {useParams} from 'react-router-dom'
+import axios from "axios";
 
 function VideoDetails({ selectedVideo }) {
-  const {videoId} =useParams();
-  const [video, setVideo] =useState();
-  const apiKey= "84e96018-4022-434e-80bf-000ce4cd12b8";
-  const url = `https://unit-3-project-api-0a5620414506.herokuapp.com/videos/${id}?api_key=${apiKey}`
+  // const {id} =useParams();
+  // const apiKey= "84e96018-4022-434e-80bf-000ce4cd12b8";
+  // const url = `https://unit-3-project-api-0a5620414506.herokuapp.com/videos/${id}?api_key=${apiKey}`
 
 
-  const getVideoById = async(id) =>{
-    try{
-      const response = await axios.get(`${url}`);
-    }
-    catch(error){
-      console.error("Error fetching video by ID", error);
-    }
-  };
+  // const getVideoById = async(id) =>{
+  //   try{
+  //     const response = await axios.get(`${url}`);
+  //   }
+  //   catch(error){
+  //     console.error("Error fetching video by ID", error);
+  //   }
+  // };
 
-  useEffect(() => {
-    getVideoById(videoId)}, [videoId])
+  // useEffect(() => {
+  //   getVideoById()}, [id])
 
   return (
     <main className="video">
