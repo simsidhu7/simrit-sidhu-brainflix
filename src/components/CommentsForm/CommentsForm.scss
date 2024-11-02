@@ -73,6 +73,7 @@
   }
 
   &__input-wrapper {
+    margin-top:0.7rem;
     @include tablet {
       display: flex;
       flex-direction: column;

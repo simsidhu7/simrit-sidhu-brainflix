@@ -88,7 +88,7 @@
     }
   }
   &__button {
-    padding: 0.65rem 0rem;
+    padding: 0.63rem 7.3rem;
     background-color: $BrainFlix-Blue;
     color: $White;
     border: none;
@@ -146,5 +146,12 @@
     @include desktop {
       margin: 0 0 0 1rem;
     }
+  }
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: inherit;
   }
 }

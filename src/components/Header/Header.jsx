@@ -25,8 +25,9 @@ function Header() {
         />
       </section>
       <div className="header__button-container">
-      <Link to= "/VideoUploadPage">
-        <button className="header__button">UPLOAD</button></Link>
+      <button className="header__button">
+      <Link to= "/UploadPage" className="header__mobile-upload-link">
+        UPLOAD</Link></button>
       </div>
     </header>
   );
