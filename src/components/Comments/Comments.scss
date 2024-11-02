@@ -33,6 +33,9 @@
       width: 2.7rem;
       margin: 1.3rem 1.4rem 0rem 0.9rem;
     }
+    @include desktop{
+      margin:1.1rem 1.4rem 0rem 1rem;
+    }
   }
   &__container {
     display: flex;
@@ -54,7 +57,7 @@
     color: $Silver;
     margin-left: auto;
     @include desktop {
-      padding-right: 1rem;
+      padding-right: 2rem;
     }
   }
 

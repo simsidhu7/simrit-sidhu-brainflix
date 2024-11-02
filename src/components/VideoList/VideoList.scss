@@ -46,7 +46,7 @@
     height: 3.9rem;
     width: 7rem;
     border-radius: 4px;
-    object-fit:cover;
+    object-fit: cover;
   }
 
   a {
@@ -54,24 +54,27 @@
     align-items: stretch;
     gap: 1rem;
     width: 100%;
-    max-width:100%;
+    max-width: 100%;
   }
 
-  &__list-item{
-    padding-bottom:1rem;
-    list-style-type:none;
+  &__list-item {
+    padding-bottom: 1rem;
+    list-style-type: none;
   }
 
   &__video-container {
-    display:flex;
-    }
+    display: flex;
+  }
 
   &__video-descr-container {
     @include flex-column;
-    max-width:100%;
-    justify-content:space-between;
-    @include tablet{
-      width:25%;
+    max-width: 100%;
+    justify-content: space-between;
+    @include tablet {
+      width: 25%;
+    }
+    @include desktop {
+      width: 50%;
     }
   }
   &__title {
