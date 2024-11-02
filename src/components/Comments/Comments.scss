@@ -28,8 +28,7 @@
     height: 2.5rem;
     border-radius: 50%;
     background-color: $Mercury;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
+    margin: 0.6rem 0.8rem 0rem 0.1rem;
     @include tablet {
       width: 2.7rem;
       margin: 1.3rem 1.4rem 0rem 1.4rem;
@@ -62,7 +61,7 @@
   &__text {
     @include mobile-body-black;
     margin-top: 0rem;
-    margin-left: 3.6rem;
+    margin-left: 3.5rem;
     @include tablet {
       margin-left: 5.5rem;
       font-size: 0.875rem;

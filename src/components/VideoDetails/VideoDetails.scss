@@ -15,8 +15,8 @@
     padding-bottom: 1rem;
     margin-bottom: 0.5rem;
     border-bottom: 1px solid $Mercury;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
     @include tablet {
       border: none;
       font-size: 2rem;
@@ -31,9 +31,8 @@
   &__all-details {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     border-bottom: 1px solid $Mercury;
-    margin: 0 1rem;
+    margin: 0 1.2rem;
     @include tablet {
       align-items: center;
       justify-content: space-between;
