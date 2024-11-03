@@ -1,7 +1,4 @@
 import "../../App.scss";
-import Header from "../../components/Header/Header";
-import { useState, useEffect } from "react";
-import axios from "axios";
 import "./VideoUploadPage.scss";
 import { useNavigate } from "react-router-dom";
 
@@ -14,10 +11,10 @@ function VideoUploadPage() {
   };
   return (
     <section className="upload">
+          <h1 className="upload__title">Upload Video</h1>
+          <div className="upload__page-container">
         <div className="upload__image-container">
-      <h1 className="upload__title">Upload Video</h1>
-
-      
+    
         <p className="upload__image-title">VIDEO THUMBNAIL</p>
         <img
           className="upload__image"
@@ -49,6 +46,7 @@ function VideoUploadPage() {
           <p className="upload__cancel">CANCEL</p>
         </div>
       </form>
+      </div>
     </section>
   );
 }

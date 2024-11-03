@@ -2,47 +2,65 @@
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/typography.scss" as *;
 .upload {
-  @include desktop{
-    display:flex;
-  }
   &__title {
     padding: 1.5rem 0rem 0rem 1rem;
     font-family: "avenir-demi";
     font-size: 1.5rem;
     border-top: 1px solid $Mercury;
-    @include tablet{
-      padding:1.5rem 0rem 0rem 1.5rem;
-      font-size:2.0625rem;
-      line-height:2.75rem;
-      margin-top:0;
+    @include tablet {
+      padding: 1.5rem 0rem 0rem 1.5rem;
+      font-size: 2.0625rem;
+      line-height: 2.75rem;
+      margin-top: 0;
+    }
+    @include desktop {
+      padding-left: 7.5rem;
     }
   }
+
+  &__page-container {
+    @include desktop {
+      display: flex;
+    }
+  }
+
   &__image-title {
     color: $Silver;
     font-family: "avenir-demi";
     @include labels-buttons-mobile;
     padding-left: 1rem;
     margin-bottom: 0.3rem;
-    @include tablet{
-      border-top:1px solid $Mercury;
+    @include tablet {
+      border-top: 1px solid $Mercury;
       margin: 0rem 1.6rem 0rem 1.6rem;
       padding: 1.4rem 0 0.2rem 0;
+    }
+    @include desktop {
+      padding: 0.5rem 0 0 4rem;
+      border: none;
     }
   }
 
   &__image {
     width: 90vw;
     margin: 0 0.95rem 0 0.95rem;
-    @include tablet{
+    @include tablet {
       margin: 0 0.95rem 0 1.5rem;
-      width:50%;
+      width: 50%;
+    }
+    @include desktop {
+      width: 69%;
+      margin: 0.7rem 0 0 5.5rem;
     }
   }
 
-  &__image-container{
-    @include desktop{
-      display:flex;
-      flex-direction:column;
+  &__image-container {
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid $Mercury;
+      margin-bottom: 5.45rem;
+      margin-left: 2rem;
     }
   }
 
@@ -52,6 +70,12 @@
     justify-content: center;
     gap: 0.25rem;
     margin-bottom: 2rem;
+    @include desktop {
+      width: 80%;
+      margin-right: 4rem;
+      margin-right: 0rem;
+      padding-right: 3rem;
+    }
     label {
       font-size: 0.813rem;
       margin: 0;
@@ -60,7 +84,7 @@
       color: $Silver;
       @include labels-buttons-mobile;
       font-family: "avenir-demi";
-      @include tablet{
+      @include tablet {
         margin: 0 0.7rem;
       }
     }
@@ -71,8 +95,11 @@
       border-color: $Mercury;
       margin: 0 1rem;
       border-radius: 3px;
-      @include tablet{
+      @include tablet {
         margin: 0 1.6rem;
+      }
+      @include desktop {
+        width: 42rem;
       }
     }
 
@@ -92,14 +119,17 @@
     flex-wrap: wrap;
     align-content: center;
     text-align: center;
-    @include tablet{
-      flex-direction:row-reverse;
-      border-top:1px solid $Mercury;
-      margin:0 1.5rem;
+    @include tablet {
+      flex-direction: row-reverse;
+      border-top: 1px solid $Mercury;
+      margin: 0 1.5rem;
     }
-    @include desktop{
-      display:flex;
-      flex-direction:row;
+    @include desktop {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+      gap: 2rem;
+      margin: 0 1.5rem 0 0;
     }
   }
 
@@ -110,27 +140,37 @@
     background-color: $BrainFlix-Blue;
     color: $White;
     @include labels-buttons-mobile;
-    font-family: "avenir-demi";
+    font-family: "avenir-regular";
     background-image: url("../../src/assets/images/publish.svg");
     background-position: 5% 50%;
     background-repeat: no-repeat;
     border: none;
     margin-bottom: 1.5rem;
-    @include tablet{
-      width:22vw;
-      margin:1rem 0rem 0 4.5rem;
+    @include tablet {
+      width: 22vw;
+      margin: 1rem 0rem 0 4.5rem;
+    }
+    @include desktop {
+      width: auto;
+      padding: 0.6rem 3rem;
+      margin: 1rem 0 0 0;
+      align-items: center;
     }
   }
 
   &__cancel {
     color: $BrainFlix-Blue;
     font-family: "avenir-demi";
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
     margin-bottom: 0;
-    @include tablet{
-      margin-top:1.55rem;
+    @include tablet {
+      margin-top: 1.55rem;
+    }
+
+    @include desktop {
+      padding: 0;
+      margin: 1.6rem 3rem 0 0;
     }
   }
 }
-
