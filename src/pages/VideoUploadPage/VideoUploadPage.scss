@@ -2,6 +2,9 @@
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/typography.scss" as *;
 .upload {
+  @include desktop{
+    display:flex;
+  }
   &__title {
     padding: 1.5rem 0rem 0rem 1rem;
     font-family: "avenir-demi";
@@ -33,6 +36,13 @@
     @include tablet{
       margin: 0 0.95rem 0 1.5rem;
       width:50%;
+    }
+  }
+
+  &__image-container{
+    @include desktop{
+      display:flex;
+      flex-direction:column;
     }
   }
 
@@ -86,6 +96,10 @@
       flex-direction:row-reverse;
       border-top:1px solid $Mercury;
       margin:0 1.5rem;
+    }
+    @include desktop{
+      display:flex;
+      flex-direction:row;
     }
   }
 

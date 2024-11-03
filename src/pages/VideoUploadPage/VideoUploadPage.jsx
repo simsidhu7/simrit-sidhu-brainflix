@@ -14,9 +14,10 @@ function VideoUploadPage() {
   };
   return (
     <section className="upload">
+        <div className="upload__image-container">
       <h1 className="upload__title">Upload Video</h1>
 
-      <div className="upload__image-container">
+      
         <p className="upload__image-title">VIDEO THUMBNAIL</p>
         <img
           className="upload__image"
