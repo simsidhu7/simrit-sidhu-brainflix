@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
   }
+
   &__list-item {
     list-style-type: none;
     border-bottom: 1px solid $Mercury;
@@ -33,10 +34,11 @@
       width: 2.7rem;
       margin: 1.3rem 1.4rem 0rem 0.9rem;
     }
-    @include desktop{
-      margin:1.1rem 1.4rem 0rem 1rem;
+    @include desktop {
+      margin: 1.1rem 1.4rem 0rem 1rem;
     }
   }
+
   &__container {
     display: flex;
     align-items: center;

@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "../NotFoundPage/NotFoundPage.scss";
 
 function NotFoundPage() {
-  return (
-    <div>Page Not Found</div>
-  )
+  return <div className="NotFound">Page Not Found.</div>;
 }
 
 export default NotFoundPage;

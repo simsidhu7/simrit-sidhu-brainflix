@@ -3,7 +3,7 @@ $font-demi-weight: 600;
 $font-bold-weight: 700;
 
 @font-face {
-  font-family: "avenir-regular"; 
+  font-family: "avenir-regular";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf");
   font-weight: $font-regular-weight;
 }
@@ -11,11 +11,11 @@ $font-bold-weight: 700;
 @font-face {
   font-family: "avenir-demi";
   src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf");
-  font-weight: $font-demi-weight; 
+  font-weight: $font-demi-weight;
 }
 
 @font-face {
   font-family: "avenir-bold";
   src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf");
-  font-weight: $font-bold-weight; 
+  font-weight: $font-bold-weight;
 }

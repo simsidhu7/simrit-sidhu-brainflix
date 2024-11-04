@@ -1,5 +1,5 @@
 import "../../App.scss";
-import Header from "../../components/Header/Header";
+import "../HomePage/Homepage.scss";
 import Video from "../../components/Video/Video";
 import VideoDetails from "../../components/VideoDetails/VideoDetails";
 import Comments from "../../components/Comments/Comments";
@@ -26,7 +26,7 @@ function HomePage() {
       try {
         const response = await axios.get(`${videoUrl}`);
         setVideos(response.data);
-        //if ID is defined, make the call with the useParams id, otherwise use specificvideoresponse.data
+
         if (id) {
           const specificVideoResponse = await axios.get(
             `https://unit-3-project-api-0a5620414506.herokuapp.com/videos/${id}?api_key=${apikey}`
@@ -46,25 +46,21 @@ function HomePage() {
     getVideos();
   }, [id]);
 
-  //Create another use effect for dynamic url
-
   const filteredVideos = videos.filter((video) => {
     return selectedVideo && video.id !== selectedVideo.id;
   });
-if (selectedVideo == null){
-return <h1>Loading</h1>
-}
+  if (selectedVideo == null) {
+    return <h1 className="Loading">Loading...</h1>;
+  }
   return (
     <div className="video-page">
-      {/* if useState selectedVideo exists, then render the component */}
       <Video Video={selectedVideo} />
       <div className="video-page__container">
         <div className="video-page__details-comments">
           <VideoDetails selectedVideo={selectedVideo} />
           <CommentsForm />
-          <Comments comments={selectedVideo.comments}/>
+          <Comments comments={selectedVideo.comments} />
         </div>
-        {/* <VideoList video={videos}/> */}
         <VideoList videos={filteredVideos} />
       </div>
     </div>

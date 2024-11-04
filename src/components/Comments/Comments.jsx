@@ -1,6 +1,5 @@
 import "./Comments.scss";
 
-//changed props from comments
 function Comments({ comments }) {
   return (
     <div className="comments">

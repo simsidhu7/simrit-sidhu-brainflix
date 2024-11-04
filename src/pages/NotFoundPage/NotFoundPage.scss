@@ -2,7 +2,9 @@
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/typography.scss" as *;
 
-.Loading{
-    font-family:"avenir-regular";
-    padding-left:2rem;
+.NotFound {
+  font-family: "avenir-bold";
+  padding-left: 2rem;
+  font-size: 1.25rem;
+  padding-top: 2rem;
 }

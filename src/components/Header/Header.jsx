@@ -1,5 +1,7 @@
 import "./Header.scss";
 import { Link } from "react-router-dom";
+import logoImage from "../../assets/images/BrainFlix-logo.svg";
+import headerImage from "../../assets/images/Mohan-muruge.jpg";
 
 function Header() {
   return (
@@ -8,7 +10,7 @@ function Header() {
         <Link to="/">
           <img
             className="header__logo-image"
-            src="../../src/assets/images/BrainFlix-logo.svg"
+            src={logoImage}
             alt="BrainFlix logo"
           />
         </Link>
@@ -20,11 +22,13 @@ function Header() {
             UPLOAD
           </Link>
         </button>
-        <img
-          className="header__profile-image"
-          src="../../src/assets/images/Mohan-muruge.jpg"
-          alt="Mohan Profile Picture"
-        />
+        <div className="header__image-container">
+          <img
+            className="header__profile-image"
+            src={headerImage}
+            alt="Mohan Profile Picture"
+          />
+        </div>
       </section>
       <div className="header__button-container">
         <button className="header__button">

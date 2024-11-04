@@ -1,11 +1,8 @@
 import "./VideoDetails.scss";
-import {useState, useEffect} from "react";
-import {useParams} from 'react-router-dom'
-import axios from "axios";
+import viewsIcon from "../../assets/images/views.svg";
+import likesIcon from "../../assets/images/likes.svg";
 
 function VideoDetails({ selectedVideo }) {
-
-
   return (
     <main className="video">
       <h1 className="video__title">{selectedVideo.title}</h1>
@@ -22,7 +19,7 @@ function VideoDetails({ selectedVideo }) {
           <div className="video__views-container">
             <img
               className="video__views-icon"
-              src="../../src/assets/images/views.svg"
+              src={viewsIcon}
               alt="Views Icon"
             />
             <span className="video__views">{selectedVideo.views} </span>
@@ -30,7 +27,7 @@ function VideoDetails({ selectedVideo }) {
           <div className="video__likes-container">
             <img
               className="video__likes-icon"
-              src="../../src/assets/images/likes.svg"
+              src={likesIcon}
               alt="Likes Icon"
             />
             <span className="video__likes">{selectedVideo.likes}</span>

@@ -14,7 +14,11 @@
     align-items: center;
     text-align: left;
     padding: 1rem 0;
+    @include desktop {
+      border-bottom: 1px solid $Mercury;
+    }
   }
+
   &__logo {
     display: flex;
     align-items: center;
@@ -25,6 +29,7 @@
       padding-left: 2.5rem;
     }
   }
+
   &__search-container {
     width: 96%;
     display: flex;
@@ -36,6 +41,7 @@
       margin-left: 2rem;
     }
   }
+
   &__logo-image {
     width: 7rem;
     height: auto;
@@ -49,6 +55,7 @@
       padding: 0.5rem 32rem 0.5rem 5rem;
     }
   }
+
   &__input {
     background-color: $Alabaster;
     border-radius: 3px;
@@ -87,6 +94,7 @@
       margin-right: 1rem;
     }
   }
+
   &__button {
     padding: 0.63rem 7.3rem;
     background-color: $BrainFlix-Blue;
@@ -98,7 +106,7 @@
     background-position: 5% 50%;
     background-repeat: no-repeat;
     font-family: "avenir-regular";
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.13rem;
     @include tablet {
       display: none;
@@ -109,7 +117,7 @@
     display: none;
     @include tablet {
       display: inline-block;
-      font-size: 14px;
+      font-size: 0.875rem;
       padding: 0.7rem 2.5rem 0.7rem 2.8rem;
       background-color: $BrainFlix-Blue;
       color: $White;
@@ -120,7 +128,7 @@
       background-position: 5% 50%;
       background-repeat: no-repeat;
       font-family: "avenir-regular";
-      font-size: 13px;
+      font-size: 0.8125rem;
       line-height: 1.13rem;
       width: 30vw;
     }
@@ -129,12 +137,17 @@
     }
   }
 
-  &__profile-image {
+  &__image-container {
     width: 2.6rem;
     height: 2.4rem;
+  }
+
+  &__profile-image {
     border-radius: 50%;
     background-color: $Mercury;
     margin-left: 0.8rem;
+    object-fit: cover;
+    object-position: 1%;
 
     @include tablet {
       width: 3.1rem;
@@ -142,7 +155,6 @@
       margin-top: 0.1rem;
       margin-left: auto;
     }
-
     @include desktop {
       margin: 0 0 0 1rem;
     }

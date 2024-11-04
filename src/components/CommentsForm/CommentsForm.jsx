@@ -1,4 +1,5 @@
 import "./CommentsForm.scss";
+import profilePicture from "../../assets/images/Mohan-muruge.jpg";
 
 function CommentsForm() {
   return (
@@ -10,7 +11,7 @@ function CommentsForm() {
           <div className="comments-form__input">
             <img
               className="comments-form__profile-picture"
-              src="../src/assets/images/Mohan-muruge.jpg"
+              src={profilePicture}
               alt="Mohan's picture"
             />
             <textarea
