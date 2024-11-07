@@ -17,11 +17,11 @@ function Header() {
       </div>
       <section className="header__search-container">
         <input className="header__input" name="search" placeholder="Search" />
-        <button className="header__tablet-button">
-          <Link to="/UploadPage" className="header__tablet-button-link">
+        <Link to="/UploadPage" className="header__tablet-button-link">
+        <span className="header__tablet-button">
             UPLOAD
-          </Link>
-        </button>
+        </span>
+        </Link>
         <div className="header__image-container">
           <img
             className="header__profile-image"

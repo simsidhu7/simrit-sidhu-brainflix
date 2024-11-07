@@ -13,7 +13,6 @@ function HomePage() {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
-  const defaultVideoId = videos[0];
   const apikey = "e03dd814-a30f-4b5c-9fe8-03cee49e0c39";
   const videoUrl = `https://unit-3-project-api-0a5620414506.herokuapp.com/videos?api_key=${apikey}`;
 
@@ -39,6 +38,8 @@ function HomePage() {
           setSelectedVideo(specificVideoResponse.data);
         }
       } catch (error) {
+
+        //take the user to a not found page
         console.error("Error fetching the video: ", error);
       }
     };
@@ -49,9 +50,9 @@ function HomePage() {
   const filteredVideos = videos.filter((video) => {
     return selectedVideo && video.id !== selectedVideo.id;
   });
-  if (selectedVideo == null) {
-    return <h1 className="Loading">Loading...</h1>;
-  }
+  // if (selectedVideo == null) {
+  //   return <h1 className="Loading">Loading...</h1>;
+  // }
   return (
     <div className="video-page">
       <Video Video={selectedVideo} />
@@ -59,7 +60,7 @@ function HomePage() {
         <div className="video-page__details-comments">
           <VideoDetails selectedVideo={selectedVideo} />
           <CommentsForm />
-          <Comments comments={selectedVideo.comments} />
+          <Comments comments={selectedVideo?.comments} />
         </div>
         <VideoList videos={filteredVideos} />
       </div>

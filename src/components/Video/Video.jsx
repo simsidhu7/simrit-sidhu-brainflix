@@ -3,7 +3,8 @@ function Video({ Video }) {
   return (
     <div className="video__container">
       {Video ? (
-        <video className="video__image" controls poster={Video.image}></video>
+        <video className="video__image" controls poster={Video.image}
+        src ={Video.video + "?api_key=simmy"}></video>
       ) : (
         <div>Loading</div>
       )}
@@ -11,3 +12,5 @@ function Video({ Video }) {
   );
 }
 export default Video;
+
+
