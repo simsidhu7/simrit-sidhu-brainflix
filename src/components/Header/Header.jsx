@@ -18,9 +18,9 @@ function Header() {
       <section className="header__search-container">
         <input className="header__input" name="search" placeholder="Search" />
         <Link to="/UploadPage" className="header__tablet-button-link">
-        <span className="header__tablet-button">
+        <button className="header__tablet-button">
             UPLOAD
-        </span>
+        </button>
         </Link>
         <div className="header__image-container">
           <img
@@ -31,11 +31,11 @@ function Header() {
         </div>
       </section>
       <div className="header__button-container">
+      <Link to="/UploadPage" className="header__mobile-upload-link">
         <button className="header__button">
-          <Link to="/UploadPage" className="header__mobile-upload-link">
             UPLOAD
-          </Link>
         </button>
+        </Link>
       </div>
     </header>
   );

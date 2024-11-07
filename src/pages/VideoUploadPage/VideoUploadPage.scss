@@ -110,7 +110,7 @@
 
     input {
       padding: 0.5rem 0.5rem;
-      border:1px solid $Mercury;
+      border: 1px solid $Mercury;
     }
 
     textarea {
@@ -172,6 +172,8 @@
     line-height: 1.125rem;
     margin-bottom: 0;
     cursor: pointer;
+    background-color: $White;
+    border: none;
     @include tablet {
       margin-top: 1.55rem;
     }

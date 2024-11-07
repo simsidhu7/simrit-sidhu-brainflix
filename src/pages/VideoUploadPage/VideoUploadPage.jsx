@@ -10,6 +10,12 @@ function VideoUploadPage() {
     alert("The video has been successfully uploaded!");
     navigate("/");
   };
+
+  const handleCancelSubmit = (e) => {
+    e.preventDefault();
+    navigate("/");
+  };
+
   return (
     <section className="upload">
       <h1 className="upload__title">Upload Video</h1>
@@ -43,7 +49,13 @@ function VideoUploadPage() {
             <button className="upload__publish-button" type="submit">
               PUBLISH
             </button>
-            <span className="upload__cancel">CANCEL</span>
+            <button
+              className="upload__cancel"
+              type="button"
+              onClick={handleCancelSubmit}
+            >
+              CANCEL
+            </button>
           </div>
         </form>
       </div>

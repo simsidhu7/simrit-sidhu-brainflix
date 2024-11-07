@@ -108,6 +108,7 @@
     font-family: "avenir-regular";
     font-size: 0.8125rem;
     line-height: 1.13rem;
+    cursor:pointer;
     @include tablet {
       display: none;
     }
@@ -131,6 +132,7 @@
       font-size: 0.8125rem;
       line-height: 1.13rem;
       width: 30vw;
+      cursor:pointer;
     }
     @include desktop {
       width: 12vw;
@@ -148,6 +150,8 @@
     margin-left: 0.8rem;
     object-fit: cover;
     object-position: 1%;
+    width: 2.8rem;
+    height: 2.5rem;
 
     @include tablet {
       width: 3.1rem;
