@@ -11,7 +11,8 @@
   &__header {
     padding: 1rem;
     margin: 0;
-    font-family: "avenir-demi";
+    font-family: "avenir";
+    $font-demi-weight:600;
     font-size: 0.8rem;
     line-height: 1.125rem;
     color: $Silver;
@@ -83,7 +84,8 @@
   &__title {
     font-size: 0.81rem;
     color: $BrainFlix-Black;
-    font-family: "avenir-demi";
+    font-family: "avenir";
+    $font-demi-weight:600;
     margin: 0;
     line-height: 1.12rem;
     padding-top: 0;

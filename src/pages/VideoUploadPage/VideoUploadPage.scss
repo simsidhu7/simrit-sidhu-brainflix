@@ -4,7 +4,8 @@
 .upload {
   &__title {
     padding: 1.5rem 0rem 0rem 1rem;
-    font-family: "avenir-demi";
+    font-family: "avenir";
+    $font-demi-weight:600;
     font-size: 1.5rem;
     border-top: 1px solid $Mercury;
     @include tablet {
@@ -30,7 +31,8 @@
 
   &__image-title {
     color: $Silver;
-    font-family: "avenir-demi";
+    font-family: "avenir";
+    $font-demi-weight:600;
     @include labels-buttons-mobile;
     padding-left: 1rem;
     margin-bottom: 0.3rem;
@@ -88,7 +90,8 @@
       padding-top: 1rem;
       color: $Silver;
       @include labels-buttons-mobile;
-      font-family: "avenir-demi";
+      font-family: "avenir";
+      $font-demi-weight:600;
       @include tablet {
         margin: 0 0.7rem;
       }
@@ -146,7 +149,8 @@
     background-color: $BrainFlix-Blue;
     color: $White;
     @include labels-buttons-mobile;
-    font-family: "avenir-regular";
+    font-family: "avenir";
+    $font-demi-weight:400;
     background-image: url("../../src/assets/images/publish.svg");
     background-position: 5% 50%;
     background-repeat: no-repeat;
@@ -167,7 +171,8 @@
 
   &__cancel {
     color: $BrainFlix-Blue;
-    font-family: "avenir-demi";
+    font-family: "avenir";
+    $font-demi-weight:600;
     font-size: 0.75rem;
     line-height: 1.125rem;
     margin-bottom: 0;

@@ -26,14 +26,16 @@
 }
 
 @mixin mobile-body-format {
-  font-family: "avenir-regular";
+  font-family: "avenir";
+  $font-regular-weight: 400;
   font-size: 0.9rem;
   line-height: 1.13rem;
   color: $Silver;
 }
 
 @mixin mobile-body-black {
-  font-family: "avenir-regular";
+  font-family: "avenir";
+  $font-regular-weight: 400;
   font-size: 0.813rem;
   line-height: 1.13rem;
   color: $BrainFlix-DarkBlack;

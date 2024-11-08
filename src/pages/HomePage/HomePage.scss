@@ -3,6 +3,7 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .Loading{
-    font-family:"avenir-regular";
+    font-family:"avenir";
+    $font-regular-weight:400;
     padding-left:2rem;
 }

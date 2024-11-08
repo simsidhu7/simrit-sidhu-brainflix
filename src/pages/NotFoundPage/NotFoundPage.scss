@@ -3,7 +3,8 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .NotFound {
-  font-family: "avenir-bold";
+  font-family: "avenir";
+  $font-bold-weight:700;
   padding-left: 2rem;
   font-size: 1.25rem;
   padding-top: 2rem;

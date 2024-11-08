@@ -3,7 +3,8 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .comments-form {
-  font-family: "avenir-regular";
+  font-family: "avenir";
+  $font-regular-weight: 400;
   @include desktop {
     padding-left: 0.5rem;
   }
@@ -12,12 +13,14 @@
     padding: 0rem 1rem;
     margin: 0.5rem 0 0 0;
     font-size: 0.875rem;
-    font-family: "avenir-demi";
+    font-family: "avenir";
+    $font-demi-weight: 600;
     line-height: 1.13rem;
     color: $BrainFlix-Black;
     @include tablet {
       line-height: 1.25rem;
-      font-family: "avenir-bold";
+      font-family: "avenir";
+      $font-demi-weight: 700;
       padding-left: 2.3rem;
     }
   }
@@ -42,7 +45,8 @@
     padding: 8px;
     border: 1px solid $Mercury;
     border-radius: 3px;
-    font-family: "avenir-regular";
+    font-family: "avenir";
+    $font-regular-weight: 400;
     width: 80%;
     height: 4.6875rem;
     background-color: $Alabaster;
@@ -105,10 +109,11 @@
     background-image: url("../../src/assets/images/add_comment.svg");
     background-position: 5% 50%;
     background-repeat: no-repeat;
-    font-family: "avenir-regular";
+    font-family: "avenir";
+    $font-regular-weight: 400;
     font-size: 0.81rem;
     line-height: 1.13rem;
-    cursor:pointer;
+    cursor: pointer;
     @include tablet {
       margin-left: 1rem;
       margin-top: 3.35rem;
@@ -125,7 +130,8 @@
 }
 
 label {
-  font-family: "avenir-demi";
+  font-family: "avenir";
+  $font-demi-weight: 600;
   @include labels-buttons-mobile;
   color: $Silver;
   line-height: 1.125rem;
