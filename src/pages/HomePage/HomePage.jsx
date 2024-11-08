@@ -12,13 +12,12 @@ import { useParams, useNavigate } from "react-router-dom";
 function HomePage() {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
-const navigate = useNavigate();
+  const navigate = useNavigate();
   const apikey = "e03dd814-a30f-4b5c-9fe8-03cee49e0c39";
-  const videoUrl = `https://unit-3-project-api-0a5620414506.herokuapp.com/videos?api_key=${apikey}`;
+  const baseUrl = import.meta.env.VITE_BASE_URL;
+  const videoUrl = `${baseUrl}/videos?api_key=${apikey}`;
 
   const { id } = useParams();
-
-  const url = `https://unit-3-project-api-0a5620414506.herokuapp.com/videos/${id}?api_key=${apikey}`;
 
   useEffect(() => {
     const getVideos = async () => {
@@ -28,18 +27,18 @@ const navigate = useNavigate();
 
         if (id) {
           const specificVideoResponse = await axios.get(
-            `https://unit-3-project-api-0a5620414506.herokuapp.com/videos/${id}?api_key=${apikey}`
+            `${baseUrl}/videos/${id}?api_key=${apikey}`
           );
           setSelectedVideo(specificVideoResponse.data);
         } else {
           const specificVideoResponse = await axios.get(
-            `https://unit-3-project-api-0a5620414506.herokuapp.com/videos/${response.data[0].id}?api_key=${apikey}`
+            `${baseUrl}/videos/${response.data[0].id}?api_key=${apikey}`
           );
           setSelectedVideo(specificVideoResponse.data);
         }
       } catch (error) {
         console.error("Error fetching the video: ", error);
-        navigate ("/NotFound")
+        navigate("/NotFound");
       }
     };
 

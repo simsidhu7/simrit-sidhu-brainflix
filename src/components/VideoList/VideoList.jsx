@@ -12,7 +12,7 @@ function VideoList({ videos }) {
               <article className="selection__video-container">
                 <img
                   className="selection__video-chosen"
-                  src={video.image}
+                  src={import.meta.env.VITE_BASE_URL + video.image}
                   alt={video.title}
                 />
               </article>
