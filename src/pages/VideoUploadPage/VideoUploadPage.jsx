@@ -1,16 +1,34 @@
 import "../../App.scss";
 import "./VideoUploadPage.scss";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
 import videoPreviewImage from "../../assets/images/Upload-video-preview.jpg";
 
 function VideoUploadPage() {
   const navigate = useNavigate();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("The video has been successfully uploaded!");
-    navigate("/");
-  };
+  const baseUrl = import.meta.env.VITE_BASE_URL;
 
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const newVideo = {
+      title: title,
+      description: description,
+    };
+
+    try {
+      await axios.post(`${baseUrl}/videos`, newVideo);
+      alert("The video has been successfully uploaded!");
+      navigate("/");
+    } catch (error) {
+      console.error("Video upload error:", error);
+      alert("There was an error uploading your video.");
+    }
+  };
   const handleCancelSubmit = (e) => {
     e.preventDefault();
     navigate("/");
@@ -36,6 +54,8 @@ function VideoUploadPage() {
             id="upload__form-title"
             type="text"
             placeholder="Add a title to your video"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
             required
           />
           <label htmlFor="upload__form-descr">ADD A VIDEO DESCRIPTION</label>
@@ -43,6 +63,8 @@ function VideoUploadPage() {
             name="upload__form-descr"
             id="upload__form-descr"
             placeholder="Add a description to your video"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
             required
           ></textarea>
           <div className="upload__selections-container">

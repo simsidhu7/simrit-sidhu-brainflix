@@ -32,9 +32,9 @@ function Header() {
       </section>
       <div className="header__button-container">
       <Link to="/UploadPage" className="header__mobile-upload-link">
-        <button className="header__button">
+        <span className="header__button">
             UPLOAD
-        </button>
+        </span>
         </Link>
       </div>
     </header>
