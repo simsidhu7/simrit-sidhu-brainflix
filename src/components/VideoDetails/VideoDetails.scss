@@ -26,9 +26,8 @@
       padding: 0rem 1rem 0 1rem;
     }
     @include desktop {
-      padding-left: 1.6rem;
+      padding: 0.5rem 0 0 1rem;
       font-size: 2.062rem;
-      padding-top: 0.5rem;
       margin-bottom: 0;
     }
   }
@@ -48,8 +47,7 @@
     }
     @include desktop {
       margin-right: 0;
-      margin-left: 1.8rem;
-      justify-content: unset;
+      padding-right:1.2rem;
     }
   }
 
@@ -125,7 +123,8 @@
       margin-right:2.2rem;
     }
     @include desktop {
-      padding: 0.5rem 5rem 1rem 1.4rem;
+      padding: 0.5rem 4rem 1rem 1.1rem;
+      line-height:1.39rem;
     }
   }
 
