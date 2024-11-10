@@ -9,7 +9,7 @@ function VideoDetails({ selectedVideo }) {
 
       <section className="video__all-details">
         <div className="video__info">
-          <p className="video__person">By: {selectedVideo.channel}</p>
+          <p className="video__person">By {selectedVideo.channel}</p>
           <p className="video__date">
             {new Date(selectedVideo.timestamp).toLocaleDateString()}
           </p>
