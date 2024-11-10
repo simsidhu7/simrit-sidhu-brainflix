@@ -12,7 +12,7 @@
     padding: 1rem;
     margin: 0;
     font-family: "avenir";
-    $font-demi-weight:600;
+    font-weight:$font-demi-weight;
     font-size: 0.8rem;
     line-height: 1.125rem;
     color: $Silver;
@@ -85,7 +85,7 @@
     font-size: 0.81rem;
     color: $BrainFlix-Black;
     font-family: "avenir";
-    $font-demi-weight:600;
+    font-weight:$font-demi-weight;
     margin: 0;
     line-height: 1.12rem;
     padding-top: 0;

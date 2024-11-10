@@ -27,14 +27,14 @@
 
 @mixin mobile-body-format {
   font-family: "avenir";
-  $font-regular-weight: 400;
+  font-weight:$font-regular-weight;
   line-height: 1.13rem;
   color: $Silver;
 }
 
 @mixin mobile-body-black {
   font-family: "avenir";
-  $font-regular-weight: 400;
+  font-weight:$font-regular-weight;
   font-size: 0.813rem;
   line-height: 1.13rem;
   color: $BrainFlix-DarkBlack;

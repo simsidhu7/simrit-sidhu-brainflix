@@ -67,19 +67,20 @@ function VideoUploadPage() {
             onChange={(e) => setDescription(e.target.value)}
             required
           ></textarea>
-          <div className="upload__selections-container">
-            <button className="upload__publish-button" type="submit">
-              PUBLISH
-            </button>
-            <button
-              className="upload__cancel"
-              type="button"
-              onClick={handleCancelSubmit}
-            >
-              CANCEL
-            </button>
-          </div>
         </form>
+        </div>
+        <div className="upload__selections-container">
+          <span className="upload__publish-button" type="submit">
+            PUBLISH
+          </span>
+          <span
+            className="upload__cancel"
+            type="button"
+            onClick={handleCancelSubmit}
+          >
+            CANCEL
+          </span>
+     
       </div>
     </section>
   );

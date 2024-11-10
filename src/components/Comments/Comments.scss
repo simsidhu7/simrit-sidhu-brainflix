@@ -49,14 +49,14 @@
 
   &__name {
     font-family: "avenir";
-    $font-demi-weight: 600;
+    font-weight:$font-demi-weight;
     font-size: 0.81rem;
     color: $BrainFlix-Black;
   }
 
   &__date {
     font-family: "avenir";
-    $font-regular-weight:400;
+    font-weight:$font-regular-weight;
     font-size: 0.81rem;
     color: $Silver;
     margin-left: auto;

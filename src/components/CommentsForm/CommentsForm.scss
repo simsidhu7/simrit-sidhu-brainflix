@@ -4,7 +4,7 @@
 
 .comments-form {
   font-family: "avenir";
-  $font-regular-weight: 400;
+  font-weight:$font-regular-weight;
   @include desktop {
     padding-left: 0.5rem;
   }
@@ -14,7 +14,7 @@
     margin: 0.5rem 0 0 0;
     font-size: 0.875rem;
     font-family: "avenir";
-    $font-demi-weight: 600;
+    font-weight:$font-demi-weight;
     line-height: 1.13rem;
     color: $BrainFlix-Black;
     @include tablet {
@@ -46,7 +46,7 @@
     border: 1px solid $Mercury;
     border-radius: 3px;
     font-family: "avenir";
-    $font-regular-weight: 400;
+    font-weight:$font-regular-weight;
     width: 80%;
     height: 4.6875rem;
     background-color: $Alabaster;
@@ -110,7 +110,7 @@
     background-position: 5% 50%;
     background-repeat: no-repeat;
     font-family: "avenir";
-    $font-regular-weight: 400;
+    font-weight:$font-regular-weight;
     font-size: 0.81rem;
     line-height: 1.13rem;
     cursor: pointer;
@@ -131,7 +131,7 @@
 
 label {
   font-family: "avenir";
-  $font-demi-weight: 600;
+  font-weight:$font-demi-weight;
   @include labels-buttons-mobile;
   color: $Silver;
   line-height: 1.125rem;

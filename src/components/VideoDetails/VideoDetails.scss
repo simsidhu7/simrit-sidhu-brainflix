@@ -10,7 +10,7 @@
 
   &__title {
     font-family: "avenir";
-    $font-bold-weight: 700;
+    font-weight:$font-bold-weight;
     color: $BrainFlix-Black;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -63,7 +63,7 @@
 
   &__person {
     font-family: "avenir";
-    $font-bold-weight: 700;
+    font-weight:$font-bold-weight;
     font-size: 0.875rem;
     color: $BrainFlix-DarkBlack;
     margin-bottom: 0.2rem;
