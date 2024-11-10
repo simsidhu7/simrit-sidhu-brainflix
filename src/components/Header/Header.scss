@@ -6,7 +6,7 @@
   @include flex-column;
   justify-content: flex-start;
   font-family: "avenir";
-  font-weight:$font-regular-weight;
+  font-weight: $font-regular-weight;
   width: 100%;
   padding-top: 1rem;
   overflow: hidden;
@@ -39,7 +39,7 @@
     margin-left: 1rem;
     @include tablet {
       width: 86vw;
-      margin-right:2.3rem;
+      margin-right: 2.3rem;
     }
   }
 
@@ -70,10 +70,10 @@
     &::placeholder {
       color: $BrainFlix-Black;
       font-family: "avenir";
-      font-weight:$font-regular-weight;
+      font-weight: $font-regular-weight;
       font-size: 12px;
       line-height: 1.125rem;
-      padding-left: 0.3rem;
+      padding-left: 0.5rem;
       @include tablet {
         padding-left: 0.6rem;
         font-size: 0.84rem;
@@ -98,11 +98,13 @@
   }
 
   &__button {
-    padding: 0.1rem 6.8rem;
-    display:flex;
-    align-items:center;
-    width:19vw;
-    height:4.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    width: 86.5vw;
+    height: 4vh;
     background-color: $BrainFlix-Blue;
     color: $White;
     border: none;
@@ -112,7 +114,7 @@
     background-position: 5% 50%;
     background-repeat: no-repeat;
     font-family: "avenir";
-    font-weight:$font-regular-weight;
+    font-weight: $font-regular-weight;
     font-size: 0.8125rem;
     line-height: 1.13rem;
     cursor: pointer;
@@ -136,7 +138,7 @@
       background-position: 5% 50%;
       background-repeat: no-repeat;
       font-family: "avenir";
-      font-weight:$font-regular-weight;
+      font-weight: $font-regular-weight;
       font-size: 0.8125rem;
       line-height: 1.13rem;
       width: 20vw;
@@ -165,7 +167,6 @@
       width: 2.6rem;
       height: 2.4rem;
       margin-top: 0rem;
-    
     }
     @include desktop {
       margin: 0 0 0 1rem;

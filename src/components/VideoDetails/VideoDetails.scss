@@ -10,7 +10,7 @@
 
   &__title {
     font-family: "avenir";
-    font-weight:$font-bold-weight;
+    font-weight: $font-bold-weight;
     color: $BrainFlix-Black;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -37,10 +37,11 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid $Mercury;
-    margin: 0 1.2rem;
+    padding-right: 3rem;
+    margin: 0 1.5rem 0 1.3rem;
+    justify-content: space-between;
     @include tablet {
       align-items: center;
-      justify-content: space-between;
     }
     @include desktop {
       margin-right: 0;
@@ -63,7 +64,7 @@
 
   &__person {
     font-family: "avenir";
-    font-weight:$font-bold-weight;
+    font-weight: $font-bold-weight;
     font-size: 0.875rem;
     color: $BrainFlix-DarkBlack;
     margin-bottom: 0.2rem;
