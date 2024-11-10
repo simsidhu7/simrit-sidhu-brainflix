@@ -5,7 +5,7 @@
   &__title {
     padding: 1.5rem 0rem 0rem 1rem;
     font-family: "avenir";
-    font-weight:$font-demi-weight;
+    font-weight: $font-demi-weight;
     font-size: 1.5rem;
     border-top: 1px solid $Mercury;
     @include tablet {
@@ -26,7 +26,7 @@
   &__page-container {
     @include desktop {
       display: flex;
-      border-bottom:1px solid $Mercury;
+      border-bottom: 1px solid $Mercury;
       margin-left: 7.6rem;
       margin-right: 5rem;
     }
@@ -35,7 +35,7 @@
   &__image-title {
     color: $Silver;
     font-family: "avenir";
-    font-weight:$font-demi-weight;
+    font-weight: $font-demi-weight;
     @include labels-buttons-mobile;
     padding-left: 1rem;
     margin-bottom: 0.3rem;
@@ -60,8 +60,8 @@
     }
     @include desktop {
       width: 90%;
-      padding:0;
-    margin:0.2rem 0 0 0;
+      padding: 0;
+      margin: 0.2rem 0 0 0;
     }
   }
 
@@ -77,13 +77,13 @@
     flex-direction: column;
     justify-content: center;
     gap: 0.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     @include tablet {
       margin-bottom: 0.75rem;
     }
     @include desktop {
       margin-right: 0rem;
-      width:66%;
+      width: 66%;
     }
     label {
       font-size: 0.813rem;
@@ -93,11 +93,9 @@
       color: $Silver;
       @include labels-buttons-mobile;
       font-family: "avenir";
-      font-weight:$font-demi-weight;
+      font-weight: $font-demi-weight;
       @include tablet {
         margin: 0 0.7rem;
-      }
-      @include desktop {
       }
     }
     input,
@@ -154,12 +152,13 @@
     color: $White;
     @include labels-buttons-mobile;
     font-family: "avenir";
-    font-weight:$font-demi-weight;
+    font-weight: $font-demi-weight;
     background-image: url("../../src/assets/images/publish.svg");
     background-position: 5% 50%;
     background-repeat: no-repeat;
     border: none;
     margin-bottom: 1.5rem;
+    margin-left: 1rem;
     cursor: pointer;
     @include tablet {
       width: 22vw;
@@ -177,8 +176,9 @@
   &__cancel {
     color: $BrainFlix-Blue;
     font-family: "avenir";
-     font-weight:$font-demi-weight;
-    font-size: 0.6rem;
+    font-weight: $font-demi-weight;
+    @include labels-buttons-mobile;
+    padding-top:0.8rem;
     line-height: 1.125rem;
     margin-bottom: 0;
     cursor: pointer;
