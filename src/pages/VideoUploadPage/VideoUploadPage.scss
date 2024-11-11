@@ -105,8 +105,15 @@
       border-color: $Mercury;
       margin: 0 1rem;
       border-radius: 3px;
+      &::placeholder{
+      color:$BrainFlix-DarkBlack;
+      }
       @include tablet {
-        margin: 0 1.6rem;
+        margin: 0 1.8rem;
+        font-size:0.875rem;
+        &::placeholder{
+          padding-left:0.5rem;
+        }
       }
       @include desktop {
         width: 42rem;
@@ -185,7 +192,7 @@
     background-color: $White;
     border: none;
     @include tablet {
-      margin-top: 1.55rem;
+      margin-top: 1rem;
       font-size: 0.75rem;
     }
 
