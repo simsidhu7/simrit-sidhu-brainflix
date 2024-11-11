@@ -7,8 +7,8 @@
     @include flex-column;
     padding: 0;
     margin: 0;
-    @include desktop{
-      margin-left:0.5rem;
+    @include desktop {
+      margin-left: 0.5rem;
     }
   }
 
@@ -52,23 +52,23 @@
 
   &__name {
     font-family: "avenir";
-    font-weight:$font-demi-weight;
+    font-weight: $font-demi-weight;
     font-size: 0.81rem;
     color: $BrainFlix-Black;
-    @include desktop{
-      font-size:0.875rem;
+    @include desktop {
+      font-size: 0.875rem;
     }
   }
 
   &__date {
     font-family: "avenir";
-    font-weight:$font-regular-weight;
+    font-weight: $font-regular-weight;
     font-size: 0.81rem;
     color: $Silver;
     margin-left: auto;
     @include desktop {
       padding-right: 2rem;
-      font-size:0.875rem;
+      font-size: 0.875rem;
     }
   }
 

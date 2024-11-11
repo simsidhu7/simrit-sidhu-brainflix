@@ -51,7 +51,7 @@ function HomePage() {
   if (selectedVideo == null) {
     return <h1 className="Loading">Loading...</h1>;
   }
-  
+
   return (
     <div className="video-page">
       <Video Video={selectedVideo} />

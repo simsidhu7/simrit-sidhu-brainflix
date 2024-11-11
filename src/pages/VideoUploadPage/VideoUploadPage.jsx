@@ -68,19 +68,23 @@ function VideoUploadPage() {
             required
           ></textarea>
         </form>
-        </div>
-        <div className="upload__selections-container">
-          <span className="upload__publish-button" type="submit">
-            PUBLISH
-          </span>
-          <span
-            className="upload__cancel"
-            type="button"
-            onClick={handleCancelSubmit}
-          >
-            CANCEL
-          </span>
-     
+      </div>
+      <div className="upload__selections-container">
+        <span
+          className="upload__publish-button"
+          onClick={() =>
+            document.querySelector(".upload__form").requestSubmit()
+          }
+        >
+          PUBLISH
+        </span>
+        <span
+          className="upload__cancel"
+          type="button"
+          onClick={handleCancelSubmit}
+        >
+          CANCEL
+        </span>
       </div>
     </section>
   );

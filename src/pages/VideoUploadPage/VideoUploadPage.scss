@@ -105,14 +105,14 @@
       border-color: $Mercury;
       margin: 0 1rem;
       border-radius: 3px;
-      &::placeholder{
-      color:$BrainFlix-DarkBlack;
+      &::placeholder {
+        color: $BrainFlix-DarkBlack;
       }
       @include tablet {
         margin: 0 1.8rem;
-        font-size:0.875rem;
-        &::placeholder{
-          padding-left:0.5rem;
+        font-size: 0.875rem;
+        &::placeholder {
+          padding-left: 0.5rem;
         }
       }
       @include desktop {
@@ -185,7 +185,7 @@
     font-family: "avenir";
     font-weight: $font-demi-weight;
     @include labels-buttons-mobile;
-    padding-top:0.8rem;
+    padding-top: 0.8rem;
     line-height: 1.125rem;
     margin-bottom: 0;
     cursor: pointer;

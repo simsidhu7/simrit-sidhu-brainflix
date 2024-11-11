@@ -4,7 +4,7 @@
 
 .comments-form {
   font-family: "avenir";
-  font-weight:$font-regular-weight;
+  font-weight: $font-regular-weight;
   @include desktop {
     padding-left: 0.5rem;
   }
@@ -14,17 +14,17 @@
     margin: 0.5rem 0 0 0;
     font-size: 0.875rem;
     font-family: "avenir";
-    font-weight:$font-demi-weight;
+    font-weight: $font-demi-weight;
     line-height: 1.13rem;
     color: $BrainFlix-Black;
     @include tablet {
       line-height: 1.25rem;
       font-family: "avenir";
-      font-weight:$font-bold-weight;
+      font-weight: $font-bold-weight;
       padding-left: 2.3rem;
     }
-    @include desktop{
-      padding-left:2.1rem;
+    @include desktop {
+      padding-left: 2.1rem;
     }
   }
 
@@ -42,7 +42,7 @@
     }
     @include desktop {
       margin-right: 0;
-      margin-left:2rem;
+      margin-left: 2rem;
     }
   }
 
@@ -51,7 +51,7 @@
     border: 1px solid $Mercury;
     border-radius: 3px;
     font-family: "avenir";
-    font-weight:$font-regular-weight;
+    font-weight: $font-regular-weight;
     width: 80%;
     height: 4.688rem;
     background-color: $Alabaster;
@@ -102,8 +102,8 @@
     @include tablet {
       margin-left: 0.85rem;
     }
-    @include desktop{
-      margin-left:0.43rem;
+    @include desktop {
+      margin-left: 0.43rem;
     }
   }
 
@@ -118,7 +118,7 @@
     background-position: 5% 50%;
     background-repeat: no-repeat;
     font-family: "avenir";
-    font-weight:$font-regular-weight;
+    font-weight: $font-regular-weight;
     font-size: 0.81rem;
     line-height: 1.13rem;
     cursor: pointer;
@@ -139,7 +139,7 @@
 
 label {
   font-family: "avenir";
-  font-weight:$font-demi-weight;
+  font-weight: $font-demi-weight;
   @include labels-buttons-mobile;
   color: $Silver;
   line-height: 1.125rem;
